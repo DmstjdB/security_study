@@ -1,6 +1,6 @@
 # Lab: SQL injection UNION attack, determining the number of columns returned by the query
 
-![title](../../images/SQL_Injection/Lab03_title.png)
+![title](../../image/SQL_Injection/Lab03_title.png)
 
 ## Difficulty
 
@@ -87,15 +87,15 @@ ORDER BY 3--;
 
 2. ORDER BY 이용하여 컬럼 개수를 확인
 
-![payload_01](../../images/SQL_Injection/Lab03_payload_01.png)
+![payload_01](../../image/SQL_Injection/Lab03_payload_01.png)
 
-![payload_02](../../images/SQL_Injection/Lab03_payload_02.png)<br/>
+![payload_02](../../image/SQL_Injection/Lab03_payload_02.png)<br/>
 -> 컬럼 개수: 3<br/>
 <br/>
 
 3. 컬럼 개수를 확인한 후 UNION SELECT NULL을 이용하여 컬럼 개수를 검증
 
-![result_01](../../images/SQL_Injection/Lab03_result_01.png)
+![result_01](../../image/SQL_Injection/Lab03_result_01.png)
 
 
 ```text
@@ -108,7 +108,7 @@ ORDER BY 3--;
 비교)
  NULL 2개 입력 시 
 
-![result_02](../../images/SQL_Injection/Lab03_result_02.png)
+![result_02](../../image/SQL_Injection/Lab03_result_02.png)
 
 -> 500 Internal Server Error 발생
 
