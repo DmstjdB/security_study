@@ -31,21 +31,21 @@ Username Enumeration
 3. Request를 Repeater로 전송
 4. Password는 고정하고 Username만 변경하며 Response 비교
 
-![Default Request](../../images/Authentication/Lab01_request_default.png)
+![Default Request](../../image/Authentication/Lab01_request_default.png)
 
 5. 존재하지 않는 Username → `Invalid username`
 
-![Invalid Username](../../images/Authentication/Lab01_repeater_invalid_username.png)
+![Invalid Username](../../image/Authentication/Lab01_repeater_invalid_username.png)
 
 6. 존재하는 Username → `Incorrect password`
 
-![Valid Username](../../images/Authentication/Lab01_repeater_valid_username.png)
+![Valid Username](../../image/Authentication/Lab01_repeater_valid_username.png)
 
 7. 응답 차이를 통해 유효한 Username 확인
 8. 이후 Password를 변경하며 올바른 비밀번호 확인
 9. 로그인 성공
 
-![result](../../images/Authentication/Lab01_login_success.png)
+![result](../../image/Authentication/Lab01_login_success.png)
 
 
 ## 대응 방안
