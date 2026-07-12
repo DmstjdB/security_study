@@ -1,6 +1,6 @@
 # Lab: SQL injection UNION attack, finding a column containing text
 
-![title](../../images/SQL_Injection/Lab04_title.png)
+![title](../../image/SQL_Injection/Lab04_title.png)
 
 ## Difficulty
 
@@ -64,7 +64,7 @@ SELECT NULL,'test',NULL--;
 2. `ORDER BY`와 `UNION SELECT NULL`을 이용하여 컬럼 개수가 3개임을 확인
 3. 문자열이 출력되는 컬럼을 찾기 위해 아래 Payload 순서대로 테스트<br/>
 
-![result](../../images/SQL_Injection/Lab04_result.png)<br/>
+![result](../../image/SQL_Injection/Lab04_result.png)<br/>
 
 ```text
 '+UNION+SELECT+'test',NULL,NULL--
