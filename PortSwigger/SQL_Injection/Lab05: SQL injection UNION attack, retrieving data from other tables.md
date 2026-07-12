@@ -1,6 +1,6 @@
 # Lab: SQL injection UNION attack, retrieving data from other tables
 
-![title](../../images/SQL_Injection/Lab05_title.png)
+![title](../../image/SQL_Injection/Lab05_title.png)
 
 ## Difficulty
 
@@ -60,9 +60,9 @@ FROM users--;
 -> 컬럼 개수: 2
 3. '+UNION+SELECT+'test','test'-- 이용하여 문자열 출력되는 컬럼 확인
 4. '+UNION+SELECT+username,+password+FROM+users-- 사용하여 users 테이블에 있는 username, password 컬럼 값 출력<br/>
-![result_01](../../images/SQL_Injection/Lab05_result_01.png)
+![result_01](../../image/SQL_Injection/Lab05_result_01.png)
 5. 출련된 정보 이용해 administrator 계정으로 로그인<br/>
-![result_02](../../images/SQL_Injection/Lab05_result_02.png)
+![result_02](../../image/SQL_Injection/Lab05_result_02.png)
 
 ---
 
