@@ -30,7 +30,7 @@ Username Enumeration
 10. status code 302 & length 다른 값 찾음
 11. 로그인 성공
 
-![result](../../images/Authentication/Lab01_2_result.png)
+![result](../../image/Authentication/Lab01_2_result.png)
 
 
 
