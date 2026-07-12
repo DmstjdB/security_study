@@ -1,5 +1,5 @@
 # Lab: Username enumeration via response timing
-![title](../../images/Authentication/Lab02_title.png)
+![title](../../image/Authentication/Lab02_title.png)
 
 ## Difficulty 
 Practitioner
@@ -36,11 +36,11 @@ Practitioner
 6. Password는 100자 이상의 긴 문자열로 고정
 7. Candidate Username 목록을 Payload로 설정
 8. Response Received(Time)를 비교하여 응답 시간이 유의미하게 긴 Username을 찾음<br>
-![response](../../images/Authentication/Lab02_response01.png)
+![response](../../image/Authentication/Lab02_response01.png)
 
 9. 찾은 Username을 고정한 뒤 Password Wordlist를 이용하여 Brute Force를 수행
 10. Status Code가 `302 Found`인 Password를 찾아 로그인 성공<br>
-![result](../../images/Authentication/Lab02_result.png)
+![result](../../image/Authentication/Lab02_result.png)
 
 ## Burp 분석
 
