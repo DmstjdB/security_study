@@ -63,14 +63,14 @@ SELECT @@version, NULL;
 1. Burp Suite에서 `GET /filter?category=` 요청을 Repeater로 전송
 2. `ORDER BY`를 이용하여 컬럼 개수를 확인
 3. 문자열(String)이 출력되는 컬럼을 확인
-4. `UNION SELECT`를 이용하여 `@@version`을 조회
+4. `UNION SELECT`를 이용하여 `@@version`을 조회<br/>
 ![payload_02](../../image/SQL_Injection/Lab07_payload_02.png) <br/>
 
 ```text
 '+UNION+SELECT+@@version,NULL#
 ```
 
-5. 응답(Response)에서 데이터베이스의 종류와 버전 정보를 확인
+5. 응답(Response)에서 데이터베이스의 종류와 버전 정보를 확인<br/>
 ![result_01](../../image/SQL_Injection/Lab07_result_01.png) <br/>
 
 ---
@@ -108,10 +108,10 @@ Lab solution에서는 @@version을 입력하라고 되어 있었지만 version()
 하지만 MySQL의 경우 versoin()을 입력하여도 버전 조회가 가능하기 때문에 결과가 오류 없이 출력된 듯 하다.
 
 version() 사용 예시)
-- Request
+- Request<br/>
 ![payload_03](../../image/SQL_Injection/Lab07_payload_03.png) <br/>
 
-- Response
+- Response<br/>
 ![result_02](../../image/SQL_Injection/Lab07_result_02.png) <br/>
 
 | DBMS                 | 버전 조회 방법                 |
@@ -127,7 +127,7 @@ version() 사용 예시)
 
 
 ### 주석처리
-이전 Lab에서는 주석 처리로 --을 사용하였었는데, 이번 Lab의 solution에는 #으로 되어 있어 찾아보게 되었다.
+이전 Lab에서는 주석 처리로 --을 사용하였었는데, 이번 Lab의 solution에는 #으로 되어 있어 찾아보게 되었다.<br/>
 ![payload_01](../../image/SQL_Injection/Lab07_payload_01.png) <br/>
 
 결론은 둘 다 주석 처리이나 아래와 같은 차이가 있었다. 
