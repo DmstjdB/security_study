@@ -101,11 +101,13 @@ SELECT @@version, NULL;
 
 이를 통해 SQL Injection 공격은 데이터 탈취 이전에 대상 시스템을 분석하는 과정부터 시작된다는 것을 알게 되었다.
 
+<br/>
 
 ### @@version 과 version()의 차이
 Lab solution에서는 @@version을 입력하라고 되어 있었지만 version()을 입력하여도 결과가 출력되길래 궁금하여 찾아보았다.
 이 Lab의 경우 MySQL과 Microsoft SQL Server를 사용하기 때문에 둘 다 가능한 @@version을 입력하라고 한 것 같다.
 하지만 MySQL의 경우 versoin()을 입력하여도 버전 조회가 가능하기 때문에 결과가 오류 없이 출력된 듯 하다.
+
 
 version() 사용 예시)
 - Request<br/>
@@ -113,6 +115,7 @@ version() 사용 예시)
 
 - Response<br/>
 ![result_02](../../image/SQL_Injection/Lab07_result_02.png) <br/>
+
 
 | DBMS                 | 버전 조회 방법                 |
 | -------------------- | ------------------------------ |
@@ -126,19 +129,21 @@ version() 사용 예시)
 둘 다 버전 정보 조회하는 역할 이지만, 어떤 방식을 지원하는 지는 DBMS마다 다르다. 
 
 
+<br/>
+
 ### 주석처리
 이전 Lab에서는 주석 처리로 --을 사용하였었는데, 이번 Lab의 solution에는 #으로 되어 있어 찾아보게 되었다.<br/>
 ![payload_01](../../image/SQL_Injection/Lab07_payload_01.png) <br/>
 
 결론은 둘 다 주석 처리이나 아래와 같은 차이가 있었다. 
 
-- --
+'--'
 1. ANSI SQL 표준에서 사용하는 주석
 2. 대부분의 DBMS에서 지원
 3. 일부 DBMS(MySQL 포함)dms -- 뒤에 공백이 있어야 주석으로 인식
 
-- #
+'#'
 1. MySQL 전용 주석
 2. 공백 없어도 주석으로 처리
 
-- `/* */` : 여러 줄 주석
+`/* */` : 여러 줄 주석
