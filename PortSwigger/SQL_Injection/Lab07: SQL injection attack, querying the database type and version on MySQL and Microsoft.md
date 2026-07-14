@@ -124,8 +124,8 @@ version() 사용 예시)
 | Microsoft SQL Server | `@@version`                    |
 | Oracle               | `SELECT banner FROM v$version` |
 
-- SELECT verion(); -> 함수
-- SELECT @@verxion; -> 시스템 변수 조회
+- SELECT version(); -> 함수
+- SELECT @@version; -> 시스템 변수 조회
 둘 다 버전 정보 조회하는 역할 이지만, 어떤 방식을 지원하는 지는 DBMS마다 다르다. 
 
 
