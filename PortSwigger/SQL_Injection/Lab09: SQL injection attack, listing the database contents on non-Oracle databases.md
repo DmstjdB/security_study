@@ -90,7 +90,7 @@ FROM information_schema.tables;
 
 ## 조회한 데이터
 - 테이블 명: users_******
-- 컬럼 명: username_******, password_******
+- 컬럼 명: username_****** password_******
 ---
 
 ## 대응 방안
