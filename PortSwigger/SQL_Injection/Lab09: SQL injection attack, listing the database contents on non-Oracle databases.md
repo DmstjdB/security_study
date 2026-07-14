@@ -78,7 +78,7 @@ FROM information_schema.tables;
 ```
 
 6. username과 password 담고 있는 컬럼 내용 조회<br/>
-![result](../../image/SQL_Injection/Lab07_result.png) <br/>
+![result](../../image/SQL_Injection/Lab09_result.png) <br/>
 ```text
 '+UNION+SELECT+username_******,+password_*******+FROM+users_******--
 ```
