@@ -66,7 +66,7 @@ Oracle의 데이터 딕셔너리(Data Dictionary) View인 `ALL_TABLES`를 조회
 2. ORDER BY를 이용하여 컬럼 개수를 확인
 3. 문자열(String)이 출력되는 컬럼을 확인
 4. 데이터 베이스 내의 테이블 목록 확인<br/>
-![table](../../image/SQL_Injection/Lab010_table.png) <br/>
+![table](../../image/SQL_Injection/Lab10_table.png) <br/>
 ```text
 '+UNION+SELECT+table_name,+NULL+FROM+all_tables--
 ```
